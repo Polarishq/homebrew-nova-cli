@@ -1,6 +1,6 @@
 require 'formula'
 
-class Ethereum < Formula
+class NovaCli < Formula
   homepage 'https://github.com/splunknova/nova-cli'
   url 'https://github.com/splunknova/nova-cli.git', :branch => 'master'
 
