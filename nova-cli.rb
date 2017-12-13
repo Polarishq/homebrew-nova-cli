@@ -10,6 +10,7 @@ class NovaCli < Formula
     ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go/libexec"
     ENV["GOPATH"] = buildpath
     system "go", "env" # Debug env
+    system "go", "get", "github.com/splunknova/nova-cli"
     system "go", "build", "nova.go"
     bin.install 'build/bin/nova'
   end
