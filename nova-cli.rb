@@ -12,7 +12,7 @@ class NovaCli < Formula
     system "go", "env" # Debug env
     system "go", "get", "github.com/splunknova/nova-cli"
     system "go", "build", "nova.go"
-    bin.install 'build/bin/nova'
+    bin.install 'nova'
   end
 
   test do
