@@ -8,6 +8,7 @@ class NovaCli < Formula
 
   def install
     ENV["GOROOT"] = "#{HOMEBREW_PREFIX}/opt/go/libexec"
+    ENV["GOPATH"] = buildpath
     system "go", "env" # Debug env
     system "go", "build", "nova.go"
     bin.install 'build/bin/nova'
