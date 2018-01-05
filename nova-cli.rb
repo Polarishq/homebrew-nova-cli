@@ -3,7 +3,7 @@ class NovaCli < Formula
   homepage "https://github.com/splunknova/nova-cli"
 
   stable do
-    url "https://github.com/splunknova/nova-cli.git", :tag => "v0.3.2"
+    url "https://github.com/splunknova/nova-cli.git", :tag => "v0.3.3"
   end
 
   devel do
